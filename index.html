@@ -583,7 +583,7 @@ Having Basic Knowledge of AWS Clouds and Docker Containerization                
         </section>
 
         <!--=============== CONTACT ===============-->
-        <section class="contact section" id="contact">
+       <section class="contact section" id="contact">
             <sapn class="section__subtitle">Get in touch</sapn>
             <h3 class="section__title">Contact Me</h3>
 
@@ -628,20 +628,22 @@ Having Basic Knowledge of AWS Clouds and Docker Containerization                
                 <div class="contact__content">
                     <h3 class="contact__title contact__title-form">Write Me your Message</h3>
 
-                    <form action="" class="contact__form">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="5acabf15-35cd-44a3-9b80-bdc317d7b0d7">
+
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Name</label>
-                            <input type="text" placeholder="Enter name" class="contact__form-input">
+                            <input type="text" placeholder="Enter name" name="name"class="contact__form-input">
                         </div>
 
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Mail</label>
-                            <input type="text" placeholder="Enter email" class="contact__form-input">
+                            <input type="text" placeholder="Enter email" name="email" class="contact__form-input">
                         </div>
 
                         <div class="contact__form-div contact__form-area">
                             <label for="" class="contact__form-tag">Message</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your Message"
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your Message" name="message"
                                 class="contact__form-input "></textarea>
                         </div>
 
