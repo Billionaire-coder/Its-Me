@@ -15,17 +15,57 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
     <meta name="theme-color" content="#a789d4">
-
     <!--=============== BOXICONS ===============-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <title> Saif's Portfolio </title>
+    <style>
+   
+        .form-wrapper {
+          border-radius: 15px;
+          padding: 30px 40px;
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+          max-width: 600px;
+          width: 100%;
+        }
+    
+        .contact__form-div {
+          margin-bottom: 20px;
+        }
+    
+        .contact__form-tag {
+          display: block;
+          margin-bottom: 8px;
+          
+        }
+    
+        .contact__form-input {
+          width: 100%;
+          color: #290c36;
+          padding: 12px;
+          border: 1px solid #555;
+          border-radius: 10px;
+          transition: border-color 0.4s, box-shadow 0.4s;
+        }
+    
+        .contact__form-input:focus {
+          border-color: #9255aa;
+          outline: none;
+          box-shadow: 0 0 8px rgba(124, 82, 190, 0.904);
+        }
+   
+    
+        textarea.contact__form-input {
+          resize: none;
+        }
+      </style>
 </head>
 
 <body>
@@ -627,32 +667,28 @@ Having Basic Knowledge of AWS Clouds and Docker Containerization                
 
                 <div class="contact__content">
                     <h3 class="contact__title contact__title-form">Write Me your Message</h3>
-
-                    <form action="https://api.web3forms.com/submit" method="POST">
-                            <input type="hidden" name="access_key" value="5acabf15-35cd-44a3-9b80-bdc317d7b0d7">
-
-                        <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Name</label>
-                            <input type="text" placeholder="Enter name" name="name"class="contact__form-input">
-                        </div>
-
-                        <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Mail</label>
-                            <input type="text" placeholder="Enter email" name="email" class="contact__form-input">
-                        </div>
-
-                        <div class="contact__form-div contact__form-area">
-                            <label for="" class="contact__form-tag">Message</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your Message" name="message"
-                                class="contact__form-input "></textarea>
-                        </div>
-
-
-                        <button class="button">
-                            Send Message
-                        </button>
-                        
-                </div>
+                    <div class="form-wrapper">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                          <input type="hidden" name="access_key" value="5acabf15-35cd-44a3-9b80-bdc317d7b0d7">
+                    
+                          <div class="contact__form-div">
+                            <label class="contact__form-tag">Name</label>
+                            <input type="text" placeholder="Enter name" name="name" class="contact__form-input" required>
+                          </div>
+                    
+                          <div class="contact__form-div">
+                            <label class="contact__form-tag">Mail</label>
+                            <input type="email" placeholder="Enter email" name="email" class="contact__form-input" required>
+                          </div>
+                    
+                          <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">Message</label>
+                            <textarea cols="30" rows="10" placeholder="Write your Message" name="message" class="contact__form-input" required></textarea>
+                          </div>
+                    
+                          <button type="submit" class="button">Send Message</button>
+                        </form>
+                      </div>
 
         </section>
     </main>
