@@ -336,8 +336,8 @@ body.light-theme {
   justify-self: center;
   width: 190px;
   height: 293px;
-  background: linear-gradient(
-    1180deg,
+  background: linear-black (
+    180deg,
     hsla(var(--first-hue), var(--sat), var(--lig), 0.5),
     hsla(var(--first-hue), var(--sat), var(--lig), 0.1)
   );
